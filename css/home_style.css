@@ -1,0 +1,476 @@
+body {
+    background: URL(../img/grey_wash_wall.png);
+    margin: 0;
+    padding: 0;
+}
+
+
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+
+}
+body::-webkit-scrollbar-corner {
+    background: #999999;
+}
+
+body::-webkit-scrollbar-track {
+    background: #999999;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+
+    background: #D0E3F1;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.log_out {
+    text-decoration: none;
+    background: red;
+    color: white;
+    display: table;
+    border-radius: 10px;
+    font-family: Georgia;
+    padding: 10px 15px;
+}
+
+.log_out:hover {
+    background: darkred;
+    transition: 0.3s;
+}
+
+.user {
+    width: 400px;
+    background: #80807d;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.user .user_name {
+    border-radius: 10px 10px 0 0 ;
+    background: #71716e;
+    padding: 10px;
+    font-size: 1.4em;
+    color: white;
+    font-family: Georgia;
+    box-shadow: 0 0 15px #242424;
+}
+
+.user .user_img img {
+    width: 100%;
+}
+
+.user .user_mail {
+
+    background: #b7b7b7;
+    color: #3c3c3c;
+    padding: 5px;
+    font-family: Georgia;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    height: 30px;
+}
+
+.user .user_mail  .user_mail_mail {
+    position: absolute;
+    left: 0;
+    background: #e3e3e3;
+    padding: 5px;
+    height: 100%;
+    top: 0;
+}
+
+.user .user_mail  .user_mail_text span {
+    position: absolute;
+    background: #252525;
+    border-radius: 0 0 5px 0;
+    height: 100%;
+    right: 0;
+    top: 0;
+    color: white;
+    padding: 5px 5px 5px 7px ;
+    cursor: pointer;
+
+}
+
+.user .user_mail  .user_mail_text span:hover {
+    background: #0000cc;
+    transition: .3s;
+}
+
+.user .user_change_mail {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+
+}
+
+
+
+.user .user_change_mail textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 30px ;
+    padding-top: 5px;
+    background: whitesmoke;
+    border: 0;
+    outline: 0;
+    border-radius: 0 0 10px 10px;
+    padding-left: 5px;
+}
+
+.user .user_change_mail button {
+    border-radius: 0 0 5px 0;
+    border: 0;
+    outline: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 30px;
+    cursor: pointer;
+    background: #252525;
+    color: white;
+    font-family: Georgia;
+    padding: 0 10px;
+    font-size: 1.1em;
+
+}
+
+.user .user_change_mail button:hover {
+    background: #0000cc;
+    transition: .3s;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    margin: 0 auto;
+    display: table;
+    padding: 0;
+
+
+}
+nav ul li {
+    list-style: none;
+    float: left;
+    margin: 0 5px;
+}
+
+nav ul li:last-of-type {
+    background: red;
+
+}
+
+nav ul li:last-of-type:hover {
+    background: #ae0000 !important;
+
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 35px;
+    display: block;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.26) inset;
+}
+
+nav ul li:hover {
+    background: rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+
+}
+
+nav ul li:hover a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+
+    cursor: default;
+    background: rgba(50, 50, 50, 0.84);
+}
+
+.post_form {
+    width: 400px;
+    margin: 20px auto;
+}
+
+.post_form input , .post_form button , .post_form textarea {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.59);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.post_form button {
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.post_form button:hover {
+    background: #3a3a3a;
+    transition: 0.3s;
+    color: white;
+}
+
+.post_form textarea {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.post_block {
+    width: 600px;
+    background: white;
+    border-radius: 15px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.post_block .post_title {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.post_block   img{
+    width: 100%;
+    display: block;
+
+
+
+}
+
+.post_block .post_content {
+    background: grey;
+    padding: 10px;
+}
+
+.post_block .post_footer {
+    background: rgba(0,0,0, 0.3);
+    padding: 5px 10px;
+}
+
+.post_block .post_footer .post_date {
+    float: left;
+    color: grey;
+}
+
+.post_block .post_footer .post_user {
+    float: right;
+}
+
+.user_photo_form {
+    overflow: hidden;
+}
+
+.user_photo_form input[type='file']{
+    display: table;
+    margin: 0 auto;
+    border: 0;
+}
+
+.user_photo_form button{
+    outline: 0;
+    padding: 5px 20px;
+    color: #252525;
+    font-size: 1.3em;
+    margin: 20px 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.user_photo_form button:nth-of-type(1) {
+    float: left;
+    border: 3px solid #005a00;
+    background: green;
+
+
+
+ }
+
+.user_photo_form button:nth-of-type(1):hover {
+    border: 3px solid green;
+    background: #005a00;
+    color: #d6d6d6;
+}
+
+.user_photo_form button:nth-of-type(2) {
+    float: right;
+    border: 3px solid #cb0000;
+    background: red;
+
+
+}
+
+.user_photo_form button:nth-of-type(2):hover {
+    border: 3px solid red;
+    background: #cb0000;
+    color: #d6d6d6;
+}
+
+.images_user {
+
+    float: left;
+    margin-right: 15px;
+    position: relative;
+    box-shadow: 0 0 5px rgba(255, 255, 0, 0.3);
+    border-radius: 15px;
+
+}
+
+.images_user .date_img_user {
+    background: #8d8d8d;
+    color: #e0e0e0;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+}
+
+.images_user img {
+    width: 500px;
+    height: 300px;
+    display: block;
+    border-radius: 15px 15px 0 0;
+
+}
+
+#images_content {
+    overflow-x: scroll;
+    background: rgba(0, 0, 0, 0.47);
+    padding: 20px;
+    display: flex;
+    margin-top: 50px;
+
+
+}
+
+
+#images_content::-webkit-scrollbar {
+    height: 20px;
+    box-shadow: 0 0 35px #929292;
+
+}
+
+#images_content::-webkit-scrollbar-track {
+    background: black;
+
+
+}
+
+#images_content::-webkit-scrollbar-thumb {
+    background-image: url("../img/arrow.png");
+    background-size: 100% 20px ;
+    background-position: center;
+
+}
+
+
+
+
+.delete_img_user {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+.delete_img_user .img_delete{
+    background: rgba(255, 0, 0, 0.8);
+    display: flex;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 5px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.65);
+    border-radius: 0 15px 0 20px;
+    font-size: 30px;
+
+}
+
+.delete_img_user .img_delete:hover {
+    background: rgba(139, 0, 0, 0.8);
+    transition: .3s;
+}
+
+.user_img_form {
+    background: #3b3b3b;
+    display: table;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+
+
+.user_img_form button {
+    background: green;
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 8px 17px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0 , 0 , 0 , 0.4);
+    cursor: pointer;
+}
+
+.user_img_form button:hover {
+    background: darkgreen;
+    transition: 0.3s;
+}
+
+.post_delete_form button {
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    font-size: 1.2em;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0 0 15px 15px;
+}
+
+.post_delete_form button:hover {
+    background: darkred;
+    transition: 0.3s;
+}
+
+.form-group-gender {
+    display: flex !important;
+    align-items: center;
+
+}
+
+.form-group-gender input {
+
+    width: 30px !important;
+    margin-right: 20px !important;
+    margin-left: 10px !important;
+}
+
+
+

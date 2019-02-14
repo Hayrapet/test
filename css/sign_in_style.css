@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../img/grey_wash_wall.png");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.sign_in {
+    width: 600px;
+    margin: 60px auto;
+}
+
+.sign_in input[type='text'] , .sign_in input[type='password'] , .sign_in input[type='submit']{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    box-shadow: 0 0 5px #003e1b;
+    padding-left: 10px;
+    height: 50px;
+    font-size: 1.2em;
+    outline: 0;
+    background: #f0f0f0;
+}
+
+
+
+.sign_in input[type='submit'] {
+    cursor: pointer;
+    background: blue;
+    color: white;
+}
+
+.sign_in input[type='submit']:hover {
+    background: darkblue;
+    transition: 0.3s;
+}
+
+.sign_up {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: block;
+    background: green;
+    text-decoration: none;
+    padding: 10px 55px;
+    color: white;
+    font-size: 1.3em;
+    border-radius: 10px;
+}
+
+.sign_up:hover {
+    background: darkgreen;
+    transition: 0.3s;
+}
+
+
+.error {
+    background: red;
+    display: table;
+    transform: translateX(-100%);
+    border-radius: 10px;
+    top: 63px;
+    font-size: 1.2em;
+    left: calc(50% - 310px);
+    padding: 10px 30px;
+    color: white;
+    position: absolute;
+    z-index: 10;
+}
+
+.error::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: red;
+    position: absolute;
+    transform: translate(-50% , -50%) rotate(45deg);
+    left: 99%;
+    bottom: 5px;
+}
+
+.ok {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: Georgia;
+    font-size: 1.6em;
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    cursor: pointer;
+    transform: translate(-50% , -50%);
+    transition: 2s;
+}
+
+.ok span {
+    margin-left: 10px;
+}
+
+
+

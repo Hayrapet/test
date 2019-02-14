@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgba(44, 44, 44, 0.78);
+}
+.sign_in , .sign_up  {
+    width: 50%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 10vw;
+    font-family: Georgia;
+    transition: 0.3s background-color , 0.3s color ;
+    border-radius: 20px;
+    box-shadow: 0 0 50px #848d86 inset;
+
+}
+
+.sign_in {
+    float: left;
+    background: green;
+}
+
+
+.sign_up {
+    float: right;
+    background: blue
+}
+
+.sign_in:hover {
+    background: darkgreen;
+    color: lightgrey;
+}
+
+.sign_up:hover {
+    background: darkblue;
+    color: lightgrey;
+}
